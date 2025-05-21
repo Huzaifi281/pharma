@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b95ea60717f44821cd565a75ceb3849c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b95ea60717f44821cd565a75ceb3849c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b95ea60717f44821cd565a75ceb3849c = L.map(
+                "map_b95ea60717f44821cd565a75ceb3849c",
+                {
+                    center: [33.7039899, 73.068446],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fcecfac99adf4c3a04fb24d3148c1da4 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_fcecfac99adf4c3a04fb24d3148c1da4.addTo(map_b95ea60717f44821cd565a75ceb3849c);
+        
+    
+            var marker_2aefb277cd586ca354a90c12a334f51e = L.marker(
+                [33.7039899, 73.068446],
+                {}
+            ).addTo(map_b95ea60717f44821cd565a75ceb3849c);
+        
+    
+            var icon_4f3ab39b83501e262c632745eaa1ea8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2aefb277cd586ca354a90c12a334f51e.setIcon(icon_4f3ab39b83501e262c632745eaa1ea8d);
+        
+    
+            marker_2aefb277cd586ca354a90c12a334f51e.bindTooltip(
+                `<div>
+                     Center Location (G-7)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1cb3a356535cb83e18fc7dd9e0fa38d1 = L.marker(
+                [33.716252, 73.084752],
+                {}
+            ).addTo(map_b95ea60717f44821cd565a75ceb3849c);
+        
+    
+            var icon_c85508b2861ed43012eccaca01f8dbdc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1cb3a356535cb83e18fc7dd9e0fa38d1.setIcon(icon_c85508b2861ed43012eccaca01f8dbdc);
+        
+    
+        var popup_22b750b53d697d7bc83ccbf360f0948d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a1869831393afc3d5e9518064aea153 = $(`<div id="html_4a1869831393afc3d5e9518064aea153" style="width: 100.0%; height: 100.0%;">Saif Pharmacy<br>Distance: 2.03 km</div>`)[0];
+                popup_22b750b53d697d7bc83ccbf360f0948d.setContent(html_4a1869831393afc3d5e9518064aea153);
+            
+        
+
+        marker_1cb3a356535cb83e18fc7dd9e0fa38d1.bindPopup(popup_22b750b53d697d7bc83ccbf360f0948d)
+        ;
+
+        
+    
+    
+            marker_1cb3a356535cb83e18fc7dd9e0fa38d1.bindTooltip(
+                `<div>
+                     Saif Pharmacy (2.03 km)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_afa247d237af9083b8183c75d3ce6301 = L.marker(
+                [33.707973, 73.089749],
+                {}
+            ).addTo(map_b95ea60717f44821cd565a75ceb3849c);
+        
+    
+            var icon_90f7e921dcd69ffb3bca5566702d7e4f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_afa247d237af9083b8183c75d3ce6301.setIcon(icon_90f7e921dcd69ffb3bca5566702d7e4f);
+        
+    
+        var popup_ecd7b14d08882b65b224901025da6ea3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8495ce0c6c44ce71d874e24e4348b879 = $(`<div id="html_8495ce0c6c44ce71d874e24e4348b879" style="width: 100.0%; height: 100.0%;">Malik Medical Store<br>Distance: 2.02 km</div>`)[0];
+                popup_ecd7b14d08882b65b224901025da6ea3.setContent(html_8495ce0c6c44ce71d874e24e4348b879);
+            
+        
+
+        marker_afa247d237af9083b8183c75d3ce6301.bindPopup(popup_ecd7b14d08882b65b224901025da6ea3)
+        ;
+
+        
+    
+    
+            marker_afa247d237af9083b8183c75d3ce6301.bindTooltip(
+                `<div>
+                     Malik Medical Store (2.02 km)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
